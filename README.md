@@ -536,13 +536,13 @@
       <span class="tab-dot"></span> Day 1 — Setup
     </button>
     <button class="tab-btn" data-tab="day2" onclick="switchTab('day2')">
-      <span class="tab-dot"></span> Day 2 — Company
+      <span class="tab-dot"></span> Day 2 — Handover
     </button>
     <button class="tab-btn" data-tab="day3" onclick="switchTab('day3')">
-      <span class="tab-dot"></span> Day 3 — Strategy
+      <span class="tab-dot"></span> Day 3 — Take ownership
     </button>
     <button class="tab-btn" data-tab="day4" onclick="switchTab('day4')">
-      <span class="tab-dot"></span> Day 4 — Product
+      <span class="tab-dot"></span> Week 2–4 — Product
     </button>
     <button class="tab-btn" data-tab="day5" onclick="switchTab('day5')">
       <span class="tab-dot"></span> Day 5 — Wrap-up
@@ -614,6 +614,10 @@
     </div>
 
     <div style="margin-top: 40px;">
+      <div class="info-card" style="background:hsla(265,75%,35%,1);border-color:hsla(265,75%,35%,1);margin-bottom:16px;">
+        <h3 style="color:#fff;">🎯 Your week one goal</h3>
+        <p style="color:rgba(255,255,255,0.85);font-size:14px;line-height:1.7;margin:0;">By Friday, you should be the named owner of Maria's active tasks and have moved at least one forward — without needing to ask Maria. That's the test. Not "have you read everything" but "can you act on it."</p>
+      </div>
       <div class="info-card highlight">
         <h3>🔥 Immediate projects to keep moving</h3>
         <ul>
@@ -632,12 +636,11 @@
           <li><strong>Comms Calendar</strong> — keeps us from sending 5 emails in one day. Add yourself to filters here too.</li>
         </ul>
       </div>
-      <div class="info-card purple">
-        <h3>📅 Beyond Week 1</h3>
+      <div class="info-card" style="background:#fff;border:1.5px dashed var(--famly-border);">
+        <h3>💡 Nice to know</h3>
+        <p>No deadlines, no pressure. A collection of deeper context, Gong demos, all the Slack channels, coffee chat suggestions and good-to-knows for when you have a quiet moment.</p>
         <ul>
-          <li>Join MKTB project prio (every other Thursday) in your first month</li>
-          <li>60/90 day catch-up with Neeta, your People Partner</li>
-          <li>Complete at least 90% of this checklist by end of quarter</li>
+          <li><a href="https://www.notion.so/343ff21c494c811098f3f210025e45bd" target="_blank">Open the Nice to know guide →</a></li>
         </ul>
       </div>
     </div>
@@ -738,52 +741,17 @@
     <div class="day-header">
       <div class="day-badge d2">2</div>
       <div class="day-header-text">
-        <h2>Day 2 — Getting to know Famly</h2>
-        <p>Who we are, how we work, what we build. Make a tea. Get reading.</p>
+        <h2>Day 2 — Maria's world & intro meetings</h2>
+        <p>One document defines your role more than anything else. Read it properly, then get your intro meetings booked.</p>
       </div>
     </div>
     <div class="check-section">
-      <div class="section-title">Start here</div>
+      <div class="section-title">Start here — this is the job</div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
           <div class="check-label"><a href="https://www.notion.so/famly/Welcome-to-Maria-s-world-33eff21c494c8002ba52c928fd3184f7" target="_blank">👸 Read: Welcome to Maria's world</a> <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">This is your primary handover doc — Maria's brain, bottled up. Read this before anything else.</div>
-        </div>
-      </div>
-    </div>
-    <div class="check-section">
-      <div class="section-title">Company & product reads</div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/d41e4b7d01e84444ab299ba0c234b45f" target="_blank">Read: What is Famly?</a> <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">The company overview — our mission, product, and why we exist.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/2af213c159ec4790abb0bf729d184461" target="_blank">Read: Our strategy & direction</a> <span class="check-tag tag-read">read</span></div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/2e89e7d24ec14a2680e93c258fe75eec" target="_blank">Read: How we work at Famly</a> <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">Ways of working, culture, expectations. Useful to understand the team dynamic.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/cc255e2800a34e66b4cf72d9299174d8" target="_blank">Read: Our customers & market</a> <span class="check-tag tag-read">read</span></div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/b9ed7ef673f9423cab4432171b387b0b" target="_blank">Read: How Famly is positioned in the market</a> <span class="check-tag tag-read">read</span></div>
+          <div class="check-note">This is your primary handover doc and your bible for the next few months. Maria's brain, bottled up. Don't skim it — read it properly. Everything you need to pick up her tasks is in here.</div>
         </div>
       </div>
     </div>
@@ -875,78 +843,44 @@
     <div class="day-header">
       <div class="day-badge d3">3</div>
       <div class="day-header-text">
-        <h2>Day 3 — Marketing strategy & UK specifics</h2>
-        <p>Time to get deep into how we market Famly in the UK. This is the meaty day.</p>
+        <h2>Day 3 — Take ownership & strategy</h2>
+        <p>Today you stop reading and start doing. Pick up one of Maria's tasks and move it forward. Then dive into the strategy context around it.</p>
       </div>
     </div>
     <div class="check-section">
-      <div class="section-title">Strategy deep-dives</div>
+      <div class="section-title">🎯 Take ownership — do this first</div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/127ff21c494c80d09b8cfbd2bd9886a7" target="_blank">Read the general Marketing strategy doc</a> <span class="check-tag tag-read">read</span></div>
-        </div>
-      </div>
-
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/296ff21c494c80e7a13cf90e12af0501" target="_blank">Explore the UK Marketing Hub</a> and sub-pages <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">This is your day-to-day workspace. Have a proper rummage.</div>
+          <div class="check-label"><a href="https://www.notion.so/e9554009217441ed85cf58ceea3499f2" target="_blank">Open the UK Task Board</a> and go through Maria's active tasks <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Assign everything to yourself. You are now the owner.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/e9554009217441ed85cf58ceea3499f2" target="_blank">Open UK Task Board</a> → add yourself to the view filters <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">You won't see your tasks until you do this. Takes 2 minutes.</div>
+          <div class="check-label">Pick one task and take one concrete action on it today <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Could be replying to a brief, updating a status, sending a draft — anything that moves it forward. The point is you do something, not just read about it.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/326ff21c494c80d59c3ae4c8b387e83a" target="_blank">Open Comms Calendar</a> → add yourself to the filters too <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">⚠️ Only add the Channel property to tasks that are actual send-outs. Not drafts.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/246ff21c494c80d9b228e44b83d7a417" target="_blank">Read the Product Comms strategy doc</a> <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">Covers focus area campaigns + the monthly product newsletter. One of the meatier parts of the role.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/325ff21c494c8009814ef6134dad8641" target="_blank">Read the Tone of Voice & AI writing guide</a> <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">Keep bookmarked. Covers how we use AI without losing our voice.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://docs.google.com/spreadsheets/d/1FDoNoZqj8hNvhiE-rMXsss6tbcLw7AI-WWvyyOWSl_k/edit?pli=1&gid=1227970672#gid=1227970672" target="_blank">Start exploring the KPI Marketing Sheet</a> <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">This is our main performance data source. Get familiar with the shape of the data.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/248ff21c494c80ea9dfae6378a6b8e64" target="_blank">Study the UK Market Analysis</a> <span class="check-tag tag-read">read</span></div>
+          <div class="check-label">Check the <a href="https://www.notion.so/326ff21c494c80d59c3ae4c8b387e83a" target="_blank">Comms Calendar</a> — is anything due this week that needs your attention? <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Add yourself to filters so you see what's coming up.</div>
         </div>
       </div>
     </div>
     <button class="btn-complete" id="complete-day3" onclick="completeDay('day3')">Mark Day 3 complete 🎉</button>
   </div>
 
-  <!-- DAY 4 -->
+  <!-- WEEK 2-4: PRODUCT TRAINING -->
   <div class="day-panel" id="tab-day4">
     <div class="day-header">
-      <div class="day-badge d4">4</div>
+      <div class="day-badge d4">📚</div>
       <div class="day-header-text">
-        <h2>Day 4 — Product & Notion</h2>
-        <p>Go deeper on product knowledge and master Notion as our project management layer.</p>
+        <h2>Week 2–4 — Product Training</h2>
+        <p>No rush on this one — work through it across your first few weeks alongside the day job.</p>
       </div>
     </div>
     <div class="check-section">
@@ -966,13 +900,6 @@
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/famly/Notion-Project-Management-Exercise-6bc61caa2f9b4d059c7b57923b570b40" target="_blank">Do the Notion PM Exercise in the Sandbox database</a> <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">Hands-on practice in a safe environment. Do it — it pays off.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
           <div class="check-label">Browse Notion broadly — get comfortable navigating it <span class="check-tag tag-action">action</span></div>
           <div class="check-note">It's the main information hub. Clicking around is not wasted time.</div>
         </div>
@@ -984,7 +911,14 @@
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
           <div class="check-label"><a href="https://www.famly.co/about/video-tour" target="_blank">Watch the 3-minute Famly product tour</a> <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">Quick way to see the product through a customer's eyes.</div>
+          <div class="check-note">Quick way to see the product through a customer's eyes. Start here.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Do the Product Training — work through all 9 modules <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Use the Product Training tab above. Find the Famly UK test account in 1Password to follow along in the actual product.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
@@ -1014,7 +948,7 @@
         </div>
       </div>
     </div>
-    <button class="btn-complete" id="complete-day4" onclick="completeDay('day4')">Mark Day 4 complete 🎉</button>
+    <button class="btn-complete" id="complete-day4" onclick="completeDay('day4')">Mark complete 🎉</button>
   </div>
 
   <!-- DAY 5 -->
