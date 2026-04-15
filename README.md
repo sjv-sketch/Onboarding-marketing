@@ -108,14 +108,32 @@
   .progress-label span { color: rgba(255,255,255,0.95); font-weight: 500; }
 
   /* Navigation tabs */
+  .tab-nav-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid var(--famly-border);
+  }
+  .tab-nav-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #fff);
+    pointer-events: none;
+    border-bottom: 1px solid var(--famly-border);
+    box-sizing: border-box;
+  }
   .tab-nav {
     display: flex;
     gap: 0;
-    background: #FFFFFF;
-    border-bottom: 1px solid var(--famly-border);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    scroll-behavior: smooth;
   }
   .tab-nav::-webkit-scrollbar { display: none; }
   .tab-btn {
@@ -477,19 +495,17 @@
 
   /* Inline note banner */
   .info-note {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    display: block;
     background: hsla(43,95%,93%,1);
     border: 1px solid hsla(43,80%,70%,1);
     border-radius: 8px;
     padding: 11px 14px;
     font-size: 13px;
     color: hsla(43,80%,28%,1);
-    line-height: 1.5;
+    line-height: 1.6;
     margin-top: 8px;
   }
-  .info-note-icon { flex: 0 0 auto; font-size: 14px; }
+  .info-note-icon { font-size: 14px; margin-right: 6px; }
 
   /* Responsive */
   @media (max-width: 600px) {
@@ -511,31 +527,33 @@
   <div class="progress-label"><span id="progressCount">0</span> of <span id="progressTotal">0</span> tasks completed</div>
 </div>
 
-<div class="tab-nav" id="tabNav">
-  <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview')">
-    <span class="tab-dot"></span> Overview
-  </button>
-  <button class="tab-btn" data-tab="day1" onclick="switchTab('day1')">
-    <span class="tab-dot"></span> Day 1 — Setup
-  </button>
-  <button class="tab-btn" data-tab="day2" onclick="switchTab('day2')">
-    <span class="tab-dot"></span> Day 2 — Company
-  </button>
-  <button class="tab-btn" data-tab="day3" onclick="switchTab('day3')">
-    <span class="tab-dot"></span> Day 3 — Strategy
-  </button>
-  <button class="tab-btn" data-tab="day4" onclick="switchTab('day4')">
-    <span class="tab-dot"></span> Day 4 — Product
-  </button>
-  <button class="tab-btn" data-tab="day5" onclick="switchTab('day5')">
-    <span class="tab-dot"></span> Day 5 — Wrap-up
-  </button>
-  <button class="tab-btn" data-tab="team" onclick="switchTab('team')">
-    <span class="tab-dot"></span> Team & Channels
-  </button>
-  <button class="tab-btn" data-tab="product" onclick="switchTab('product')">
-    <span class="tab-dot"></span> Product Training
-  </button>
+<div class="tab-nav-wrapper" id="tabNavWrapper">
+  <div class="tab-nav" id="tabNav">
+    <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview')">
+      <span class="tab-dot"></span> Overview
+    </button>
+    <button class="tab-btn" data-tab="day1" onclick="switchTab('day1')">
+      <span class="tab-dot"></span> Day 1 — Setup
+    </button>
+    <button class="tab-btn" data-tab="day2" onclick="switchTab('day2')">
+      <span class="tab-dot"></span> Day 2 — Company
+    </button>
+    <button class="tab-btn" data-tab="day3" onclick="switchTab('day3')">
+      <span class="tab-dot"></span> Day 3 — Strategy
+    </button>
+    <button class="tab-btn" data-tab="day4" onclick="switchTab('day4')">
+      <span class="tab-dot"></span> Day 4 — Product
+    </button>
+    <button class="tab-btn" data-tab="day5" onclick="switchTab('day5')">
+      <span class="tab-dot"></span> Day 5 — Wrap-up
+    </button>
+    <button class="tab-btn" data-tab="team" onclick="switchTab('team')">
+      <span class="tab-dot"></span> Team & Channels
+    </button>
+    <button class="tab-btn" data-tab="product" onclick="switchTab('product')">
+      <span class="tab-dot"></span> Product Training
+    </button>
+  </div>
 </div>
 
 <div class="main">
@@ -646,33 +664,33 @@
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Set up Email & Calendar <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.notion.so/famly/774ad17716e74fce886a1cfdd6185eb2" target="_blank">Set up Email & Calendar</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Set up 1Password <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.notion.so/famly/07da08bc2fb7415fa232dd6c2fc71601" target="_blank">Set up 1Password</a> <span class="check-tag tag-tool">tool</span></div>
           <div class="check-note">Your password manager — get this done first, everything else flows from here.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Set up Slack <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.notion.so/famly/6db9af1f1f49438c974b99427aeb227f" target="_blank">Set up Slack</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Set up Notion <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.notion.com/help/category/new-to-notion" target="_blank">Set up Notion</a> <span class="check-tag tag-tool">tool</span></div>
           <div class="check-note">Your main information hub at Famly. Download the desktop app too.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Set up Zenegy <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.notion.so/famly/73bbc3ef39534dcd8a2a35300f123c46" target="_blank">Set up Zenegy</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
@@ -688,25 +706,25 @@
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Install Notion desktop <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.notion.com/desktop" target="_blank">Install Notion desktop</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Install Slack desktop <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://slack.com/intl/en-gb/downloads/mac" target="_blank">Install Slack desktop</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Install 1Password desktop <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://1password.com/downloads/mac" target="_blank">Install 1Password desktop</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Install Figma <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-label"><a href="https://www.figma.com/downloads/" target="_blank">Install Figma</a> <span class="check-tag tag-tool">tool</span></div>
           <div class="check-note">You'll use this for design assets and brand work.</div>
         </div>
       </div>
@@ -869,13 +887,7 @@
           <div class="check-label"><a href="https://www.notion.so/127ff21c494c80d09b8cfbd2bd9886a7" target="_blank">Read the general Marketing strategy doc</a> <span class="check-tag tag-read">read</span></div>
         </div>
       </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label">Read Maria's world in full <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">Everything from product comms to events to tone of voice — it's all in here. Don't skip.</div>
-        </div>
-      </div>
+
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
@@ -1891,7 +1903,10 @@
     document.getElementById('tab-' + id).classList.add('active');
     document.querySelectorAll('.tab-btn').forEach(b => {
       b.classList.remove('active');
-      if (b.dataset.tab === id) b.classList.add('active');
+      if (b.dataset.tab === id) {
+        b.classList.add('active');
+        b.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
     });
   }
 
