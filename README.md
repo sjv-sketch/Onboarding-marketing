@@ -599,7 +599,7 @@
   <div class="hero-inner">
   <div class="hero-tag">UK Marketing Lead · Famly</div>
   <h1>Welcome to<br>your new adventure 👋</h1>
-  <p>Maria's brain, bottled up. Five days to get you fully up to speed. Tick things off as you go — you've got this.</p>
+  <p>Two phases: week 19 is about picking Maria's brain before she goes. From 18 May, the real thing starts — five structured days to get you fully operational.</p>
   <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
     <div style="flex:1;min-width:200px;max-width:400px;">
       <div class="progress-bar-wrap" style="margin:0 0 8px;">
@@ -615,7 +615,8 @@
 <div class="mobile-nav">
   <select onchange="switchTab(this.value)" id="mobileSelect">
     <option value="overview">Overview</option>
-    <option value="day1">Day 1 — Setup</option>
+    <option value="week19">Week 19 — Before you start</option>
+    <option value="day1">Day 1 — Setup (18 May)</option>
     <option value="day2">Day 2 — Handover</option>
     <option value="day3">Day 3 — First moves</option>
     <option value="day4">Day 4 — Go deeper</option>
@@ -635,7 +636,13 @@
       </button>
     </div>
     <div class="sidebar-group">
-      <div class="sidebar-group-title">Week 1</div>
+      <div class="sidebar-group-title">Before you start</div>
+      <button class="tab-btn" data-tab="week19" onclick="switchTab('week19')">
+        <span class="tab-dot"></span> Week 19 — Pre-onboarding
+      </button>
+    </div>
+    <div class="sidebar-group">
+      <div class="sidebar-group-title">Week 1 — from 18 May</div>
       <button class="tab-btn" data-tab="day1" onclick="switchTab('day1')">
         <span class="tab-dot"></span> Day 1 — Setup
       </button>
@@ -678,10 +685,17 @@
 
     <div class="timeline" id="overviewTimeline">
       <div class="timeline-item">
+        <div class="timeline-dot" id="dot-week19" style="background:var(--o400);color:#fff;font-size:10px;">19</div>
+        <div class="timeline-content">
+          <h3>Week 19 — Pre-onboarding</h3>
+          <p>Pick Maria's brain while you still can. Ask everything. No systems access yet — just knowledge transfer.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
         <div class="timeline-dot" id="dot-day1">1</div>
         <div class="timeline-content">
-          <h3>Day 1 — Setup & access</h3>
-          <p>Get your laptop unpacked, accounts created, tools installed. Meet Signe at 10am.</p>
+          <h3>Day 1 — Setup & access <span style="font-size:11px;font-weight:500;color:var(--famly-muted);">18 May</span></h3>
+          <p>Get your laptop unpacked, accounts created, tools installed.</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -724,7 +738,7 @@
     <div style="margin-top: 40px;">
       <div class="info-card" style="background:hsla(265,75%,35%,1);border-color:hsla(265,75%,35%,1);margin-bottom:16px;">
         <h3 style="color:#fff;">🎯 Your week one goal</h3>
-        <p style="color:rgba(255,255,255,0.85);font-size:14px;line-height:1.7;margin:0;">By Friday, you should own Maria's active tasks and have moved at least one forward — on your own. She's on maternity leave, so this is the real thing from day one.</p>
+        <p style="color:rgba(255,255,255,0.85);font-size:14px;line-height:1.7;margin:0;">By Friday 23 May, you should own Maria's active tasks and have moved at least one forward. She's on maternity leave — this is the real thing from day one. Your go-to is <strong style="color:#fff;">Matt</strong> for anything you need.</p>
       </div>
 
       <div class="info-card" style="background:#fff;border:1.5px dashed var(--famly-border);">
@@ -737,13 +751,111 @@
     </div>
   </div>
 
+  <!-- WEEK 19: PRE-ONBOARDING -->
+  <div class="day-panel" id="tab-week19">
+    <div class="day-header">
+      <div class="day-badge" style="background:var(--o400);color:#fff;">19</div>
+      <div class="day-header-text">
+        <h2>Week 19 — Before you start</h2>
+        <p>No systems, no access, no pressure. Just Maria — while she's still here. This week is about extracting everything in her head before she goes on maternity leave.</p>
+      </div>
+    </div>
+    <div class="info-note" style="background:hsla(43,95%,93%,1);border-color:hsla(43,80%,70%,1);color:hsla(43,80%,28%,1);margin-bottom:20px;">
+      <span class="info-note-icon">⚠️</span> <strong>Limited access this week</strong> — Google, Slack and Notion are available from week 19. Intercom, HubSpot and all other tools are provisioned from your official start date, 18 May.
+    </div>
+    <div class="check-section">
+      <div class="section-title">Get set up</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.so/famly/774ad17716e74fce886a1cfdd6185eb2" target="_blank">Set up Email & Calendar</a> <span class="check-tag tag-tool">tool</span></div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.so/famly/6db9af1f1f49438c974b99427aeb227f" target="_blank">Set up Slack</a> <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-note">Join the key channels — you'll find the full list in the Team & Channels tab.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.com/desktop" target="_blank">Install Notion desktop</a> & log in <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-note">Notion is the main knowledge hub. Have a browse around before Thursday.</div>
+        </div>
+      </div>
+    </div>
+    <div class="check-section">
+      <div class="section-title">This week</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Tuesday — Intro session with Maria <span class="check-tag tag-meet">meet</span></div>
+          <div class="check-note">Maria walks you through this onboarding tool and her Notion handover doc. Come with questions.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Thursday — Full day with Maria <span class="check-tag tag-meet">meet</span></div>
+          <div class="check-note">Maria has set aside the whole day to walk you through her handover. This is your main knowledge transfer — use it well. Ask everything you're unsure about.</div>
+        </div>
+      </div>
+    </div>
+    <div class="check-section">
+      <div class="section-title">Before Thursday — do this first</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.so/famly/Welcome-to-Maria-s-world-33eff21c494c8002ba52c928fd3184f7" target="_blank">Read Maria's world in full</a> <span class="check-tag tag-read">read</span></div>
+          <div class="check-note">Read it before you meet her — then use the meeting to ask about the things that aren't obvious from the doc.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Meet Maria — knowledge transfer session <span class="check-tag tag-meet">meet</span></div>
+          <div class="check-note">Ask about active campaigns, ongoing relationships, anything mid-flight. What would she be worried about handing over? What's not written down anywhere?</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Write down your open questions for Day 1 <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">You won't have Maria from 18 May. Anything you're still unsure about — write it down now and plan who to ask.</div>
+        </div>
+      </div>
+    </div>
+    <div class="check-section">
+      <div class="section-title">Optional reading</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.so/d41e4b7d01e84444ab299ba0c234b45f" target="_blank">Read: What is Famly?</a> <span class="check-tag tag-read">read</span></div>
+          <div class="check-note">If you want a head start — no pressure.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.famly.co/about/video-tour" target="_blank">Watch the 3-minute Famly product tour</a> <span class="check-tag tag-read">read</span></div>
+          <div class="check-note">Quick way to see the product before you start.</div>
+        </div>
+      </div>
+    </div>
+    <div class="info-note" style="margin-top:20px;">
+      <span class="info-note-icon">👋</span> From <strong>18 May</strong>, your go-to for questions is <strong>Matt</strong> — he'll be your main support through week one.
+    </div>
+  </div>
+
   <!-- DAY 1 -->
   <div class="day-panel" id="tab-day1">
     <div class="day-header">
       <div class="day-badge d1">1</div>
       <div class="day-header-text">
-        <h2>Day 1 — Setup & access</h2>
-        <p>Get everything installed and your accounts live. You have a 10am welcome with Signe.</p>
+        <h2>Day 1 — Setup & access <span style="font-size:14px;font-weight:500;color:var(--famly-muted);">18 May</span></h2>
+        <p>First official day. Get everything installed and your accounts live. If you get stuck on anything — Matt is your go-to.</p>
       </div>
     </div>
 
@@ -1073,20 +1185,26 @@
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://us-49707.app.gong.io/call?id=8412521275441605602" target="_blank">Watch Gong Demo 1</a> <span class="check-tag tag-action">watch</span></div>
-          <div class="check-note">Watch at least 2–3 sales demos. See how Famly is sold and talked about with real customers.</div>
+          <div class="check-label"><a href="https://app-eu1.hubspot.com/calls/25284517/review/485244118250" target="_blank">Watch sales call 1</a> <span class="check-tag tag-action">watch</span></div>
+          <div class="check-note">Watch at least 2–3 sales calls. See how Famly is sold and talked about with real customers.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://us-49707.app.gong.io/call?id=1229341410117026848" target="_blank">Watch Gong Demo 2</a> <span class="check-tag tag-action">watch</span></div>
+          <div class="check-label"><a href="https://app-eu1.hubspot.com/calls/25284517/review/485481548011" target="_blank">Watch sales call 2</a> <span class="check-tag tag-action">watch</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://us-49707.app.gong.io/call?id=268791737431923455" target="_blank">Watch Gong Demo 3</a> (+ <a href="https://us-49707.app.gong.io/call?id=5679462046560057975" target="_blank">4</a> and <a href="https://us-49707.app.gong.io/call?id=1723132044336778527" target="_blank">5</a> if you're keen) <span class="check-tag tag-action">watch</span></div>
+          <div class="check-label"><a href="https://app-eu1.hubspot.com/calls/25284517/review/482250229983" target="_blank">Watch sales call 3</a> <span class="check-tag tag-action">watch</span></div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://app-eu1.hubspot.com/calls/25284517/review/483525710034" target="_blank">Watch sales call 4</a> <span class="check-tag tag-action">watch</span></div>
         </div>
       </div>
     </div>
@@ -1113,8 +1231,15 @@
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label">Get set up on Intercom — you'll need a full outbound seat <span class="check-tag tag-tool">tool</span></div>
-          <div class="check-note">Check the Intercom docs in the UK Marketing Hub if you need a how-to guide.</div>
+          <div class="check-label"><a href="https://www.notion.so/famly/Providing-employees-access-to-Customer-Data-Systems-f89c90001a7a4243bdf626fba075b4a7" target="_blank">Get set up on Intercom</a> — full outbound seat needed <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-note">Access is provisioned from your official start date. Ask Matt if it's not ready by end of Day 1.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.so/famly/Hubspot-1e3ff21c494c804196d1cf02cd3e784b" target="_blank">Get set up on HubSpot</a> — read the guide first <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-note">Then follow the <a href="https://www.notion.so/famly/Hubspot-first-time-setup-2cbff21c494c80da8faafca1da712b30" target="_blank">first-time setup guide</a> to get your account configured correctly.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
@@ -1942,7 +2067,7 @@
 </div><!-- /.page-body -->
 
 <script>
-  const dayOrder = ['day1','day2','day3','day4','day5','week24','product'];
+  const dayOrder = ['week19','day1','day2','day3','day4','day5','week24','product'];
   const completedDays = new Set();
   const doneModules = new Set();
 
