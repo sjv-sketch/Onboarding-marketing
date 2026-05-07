@@ -618,7 +618,7 @@
     <option value="week19">Week 19 — Before you start</option>
     <option value="day1">Day 1 — Setup (18 May)</option>
     <option value="day2">Day 2 — Handover</option>
-    <option value="day3">Day 3 — First moves</option>
+    <option value="day3">Day 3 — Your tasks</option>
     <option value="day4">Day 4 — Go deeper</option>
     <option value="day5">Day 5 — Wrap-up</option>
     <option value="product">Week 2–4 — Product</option>
@@ -650,7 +650,7 @@
         <span class="tab-dot"></span> Day 2 — Handover
       </button>
       <button class="tab-btn" data-tab="day3" onclick="switchTab('day3')">
-        <span class="tab-dot"></span> Day 3 — First moves
+        <span class="tab-dot"></span> Day 3 — Your tasks
       </button>
       <button class="tab-btn" data-tab="day4" onclick="switchTab('day4')">
         <span class="tab-dot"></span> Day 4 — Go deeper
@@ -708,7 +708,7 @@
       <div class="timeline-item">
         <div class="timeline-dot" id="dot-day3">3</div>
         <div class="timeline-content">
-          <h3>Day 3 — First moves</h3>
+          <h3>Day 3 — Your tasks</h3>
           <p>Take ownership of Maria's task board. Pick one thing and move it forward today.</p>
         </div>
       </div>
@@ -776,6 +776,12 @@
         <div class="check-content">
           <div class="check-label"><a href="https://www.notion.so/famly/6db9af1f1f49438c974b99427aeb227f" target="_blank">Set up Slack</a> <span class="check-tag tag-tool">tool</span></div>
           <div class="check-note">Join the key channels — you'll find the full list in the Team & Channels tab.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://slack.com/intl/en-gb/downloads/mac" target="_blank">Install Slack desktop</a> <span class="check-tag tag-tool">tool</span></div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
@@ -855,7 +861,24 @@
       <div class="day-badge d1">1</div>
       <div class="day-header-text">
         <h2>Day 1 — Setup & access <span style="font-size:14px;font-weight:500;color:var(--famly-muted);">18 May</span></h2>
-        <p>First official day. Get everything installed and your accounts live. If you get stuck on anything — Matt is your go-to.</p>
+        <p>First official day — welcome to the London office. If you get stuck on anything, Matt is your go-to.</p>
+      </div>
+    </div>
+
+    <div class="check-section">
+      <div class="section-title">Morning</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">09:15 — Arrive at the London office <span class="check-tag tag-meet">meet</span></div>
+          <div class="check-note">Jakob Hansen will meet you in the foyer. There'll be breakfast with the team to kick things off. 🥐</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">10:30 — Welcome meeting with Signe <span class="check-tag tag-meet">meet</span></div>
+        </div>
       </div>
     </div>
 
@@ -865,32 +888,6 @@
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
           <div class="check-label">Unpack and set up your laptop</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/famly/774ad17716e74fce886a1cfdd6185eb2" target="_blank">Set up Email & Calendar</a> <span class="check-tag tag-tool">tool</span></div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/famly/07da08bc2fb7415fa232dd6c2fc71601" target="_blank">Set up 1Password</a> <span class="check-tag tag-tool">tool</span></div>
-          <div class="check-note">Your password manager — get this done first, everything else flows from here.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/famly/6db9af1f1f49438c974b99427aeb227f" target="_blank">Set up Slack</a> <span class="check-tag tag-tool">tool</span></div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.com/help/category/new-to-notion" target="_blank">Set up Notion</a> <span class="check-tag tag-tool">tool</span></div>
-          <div class="check-note">Your main information hub at Famly. Download the desktop app too.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
@@ -944,17 +941,17 @@
     <div class="day-header">
       <div class="day-badge d2">2</div>
       <div class="day-header-text">
-        <h2>Day 2 — Maria's world & intro meetings</h2>
-        <p>One document defines your role more than anything else. Read it properly, then get your intro meetings booked.</p>
+        <h2>Day 2 — Hit the ground running</h2>
+        <p>The handover with Maria happened in week 19. Today is about getting your intro meetings booked and starting to understand the role from the inside.</p>
       </div>
     </div>
     <div class="check-section">
-      <div class="section-title">Start here — this is the job</div>
+      <div class="section-title">Your reference doc</div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/famly/Welcome-to-Maria-s-world-33eff21c494c8002ba52c928fd3184f7" target="_blank">👸 Read: Welcome to Maria's world</a> <span class="check-tag tag-read">read</span></div>
-          <div class="check-note">This is your primary handover doc and your bible for the next few months. Maria's brain, bottled up. Don't skim it — read it properly. Everything you need to pick up her tasks is in here.</div>
+          <div class="check-label"><a href="https://www.notion.so/famly/Welcome-to-Maria-s-world-33eff21c494c8002ba52c928fd3184f7" target="_blank">👸 Maria's world</a> <span class="check-tag tag-read">read</span></div>
+          <div class="check-note">You've been through this with Maria already. Keep it open as your go-to reference when questions come up.</div>
         </div>
       </div>
     </div>
@@ -1046,31 +1043,31 @@
     <div class="day-header">
       <div class="day-badge d3">3</div>
       <div class="day-header-text">
-        <h2>Day 3 — First moves</h2>
-        <p>Stop reading. Start doing. Pick up one of Maria's tasks and move it forward today.</p>
+        <h2>Day 3 — Your tasks</h2>
+        <p>Maria has tagged you on everything in Notion. Today you get an overview of what you own and pick the first thing to move forward.</p>
       </div>
     </div>
     <div class="check-section">
-      <div class="section-title">🎯 Take ownership</div>
+      <div class="section-title">🎯 See what's yours</div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/e9554009217441ed85cf58ceea3499f2" target="_blank">Open the UK Task Board</a> and go through Maria's active tasks <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">Assign everything to yourself. You are now the owner.</div>
+          <div class="check-label"><a href="https://www.notion.so/e9554009217441ed85cf58ceea3499f2" target="_blank">Open the UK Task Board</a> and filter by your name <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Maria has already tagged you on the relevant tasks. This is your list — own it.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Check the <a href="https://www.notion.so/326ff21c494c80d59c3ae4c8b387e83a" target="_blank">Comms Calendar</a> — anything due this week? <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Add yourself to the filters so you see what's coming up.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
           <div class="check-label">Pick one task and take one concrete action on it today <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">Could be replying to a brief, updating a status, sending a draft — anything that moves it forward. The point is you do something, not just read about it.</div>
-        </div>
-      </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label">Check the <a href="https://www.notion.so/326ff21c494c80d59c3ae4c8b387e83a" target="_blank">Comms Calendar</a> — is anything due this week that needs your attention? <span class="check-tag tag-action">action</span></div>
-          <div class="check-note">Add yourself to filters so you see what's coming up.</div>
+          <div class="check-note">Replying to a brief, updating a status, sending a draft — anything that moves it forward. If you're unsure, ask Matt.</div>
         </div>
       </div>
     </div>
