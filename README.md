@@ -788,6 +788,13 @@
           <div class="check-label">Set up hiBob & Officevibe (ask Neeta) <span class="check-tag tag-meet">meet</span></div>
         </div>
       </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://www.notion.so/famly/2cbff21c494c8018bbd3dadef941c021?v=365adccdd25749ad8a3cee7d38bc207d" target="_blank">Create your Notion profile page</a> <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Add it to the team directory. You can use <a href="https://www.notion.so/famly/Signe-Valeur-198ff21c494c80eeb462f259cde295e6?v=365adccdd25749ad8a3cee7d38bc207d" target="_blank">Signe's page</a> as inspiration for what to include.</div>
+        </div>
+      </div>
     </div>
 
     <div class="check-section">
@@ -808,6 +815,13 @@
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
           <div class="check-label"><a href="https://1password.com/downloads/mac" target="_blank">Install 1Password desktop</a> <span class="check-tag tag-tool">tool</span></div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label"><a href="https://app.hubspot.com/login" target="_blank">Create your HubSpot account</a> <span class="check-tag tag-tool">tool</span></div>
+          <div class="check-note">You'll get a proper intro with Francisco on Wednesday — but get your account created today so you're ready.</div>
         </div>
       </div>
       <div class="check-item" onclick="toggle(this)">
@@ -976,6 +990,15 @@
       </div>
     </div>
     <div class="check-section">
+      <div class="section-title">HubSpot intro — already in your calendar</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">HubSpot intro with Francisco <span class="check-tag tag-meet">meet</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="check-section">
       <div class="section-title">Tools</div>
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -984,13 +1007,7 @@
           <div class="check-note">Access is provisioned from your official start date. Ask Matt if it's not ready.</div>
         </div>
       </div>
-      <div class="check-item" onclick="toggle(this)">
-        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="check-content">
-          <div class="check-label"><a href="https://www.notion.so/famly/Hubspot-1e3ff21c494c804196d1cf02cd3e784b" target="_blank">Get set up on HubSpot</a> — read the guide first <span class="check-tag tag-tool">tool</span></div>
-          <div class="check-note">Then follow the <a href="https://www.notion.so/famly/Hubspot-first-time-setup-2cbff21c494c80da8faafca1da712b30" target="_blank">first-time setup guide</a> to get your account configured correctly.</div>
-        </div>
-      </div>
+
       <div class="check-item" onclick="toggle(this)">
         <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-content">
@@ -1024,8 +1041,8 @@
     <div class="day-header">
       <div class="day-badge d4">4</div>
       <div class="day-header-text">
-        <h2>Day 4 — Notion</h2>
-        <p>Get comfortable in Notion — it's how the whole team works.</p>
+        <h2>Day 4 — Notion & product</h2>
+        <p>A good day to go deep on Notion and start getting familiar with the product.</p>
       </div>
     </div>
     <div class="info-note" style="margin-bottom:16px;">
@@ -1050,6 +1067,23 @@
         <div class="check-content">
           <div class="check-label">Browse Notion broadly — get comfortable navigating it <span class="check-tag tag-action">action</span></div>
           <div class="check-note">It's the main information hub. Clicking around is not wasted time.</div>
+        </div>
+      </div>
+    </div>
+    <div class="check-section">
+      <div class="section-title">Listen to sales calls</div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Ask someone from the UK team if you can sit in on a live call <span class="check-tag tag-action">action</span></div>
+          <div class="check-note">Listening to a real sales conversation is the fastest way to understand how Famly is positioned and what customers actually care about. Ask Matt or anyone on the UK sales team.</div>
+        </div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="check-content">
+          <div class="check-label">Watch recorded sales calls in <a href="https://app-eu1.hubspot.com/calls/25284517/review/485244118250" target="_blank">HubSpot</a> <span class="check-tag tag-action">watch</span></div>
+          <div class="check-note">Recorded calls are stored in HubSpot. Watch at least 2–3 to hear how different customers talk about their problems. More calls available in the <a href="https://app-eu1.hubspot.com/contacts/25284517/objects/0-48/views/152109726/list" target="_blank">calls library</a>.</div>
         </div>
       </div>
     </div>
